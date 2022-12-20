@@ -1,4 +1,5 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
+
 const UserSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -16,10 +17,13 @@ const UserSchema = new mongoose.Schema({
         type: String,
         require: true
     },
-    responsible: {
+    responsibleName: {
         type: String
     },
-    responsibleCPF:{
+    responsibleSecondName: {
+        type: String
+    },
+    responsibleCPF: {
         type: String
     },
     responsibleRG: {
@@ -31,5 +35,5 @@ const UserSchema = new mongoose.Schema({
     },
 });
 
-const User = mongoose("User", UserSchema);
+const User = mongoose.model("User", UserSchema);
 module.exports = User;

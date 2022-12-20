@@ -1,13 +1,14 @@
 const express = require('express');
 const cors = require('cors');
+const app = express();
 require('dotenv');
 require('./src/database/index');
-
-const app = express();
-
-app.options("*", cors());
-const routes = require('./src/router');
+const routes = require('./src/router/routes');
 app.use(express.json());
+app.use(express.urlencoded({
+    extended: false
+}));
+app.options("*", cors());
 
 const PORT = process.env.PORT || 3030;
 
