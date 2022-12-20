@@ -1,0 +1,31 @@
+{
+  "name": "system-delegacia-mulher-nodejs",
+  "version": "1.0.0",
+  "description": "development aplication node.js, system xeriff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RawdneyDevelopment/system-delegacia-mulher-nodejs.git"
+  },
+  "keywords": [
+    "node.js",
+    "project",
+    "express"
+  ],
+  "author": "Rawdney Mendes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RawdneyDevelopment/system-delegacia-mulher-nodejs/issues"
+  },
+  "homepage": "https://github.com/RawdneyDevelopment/system-delegacia-mulher-nodejs#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.1"
+  }
+}
