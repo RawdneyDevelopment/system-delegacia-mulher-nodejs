@@ -65,7 +65,9 @@ exports.deleteVictim = async (req, res) => {
   try {
     const victim = await Victim.findById(req.params.id);
     await victim.delete();
-  } catch (error) {}
+  } catch (error) {
+    res.json({ error: true, message: error.message });
+  }
 };
 exports.findVictimById = async (req, res) => {
   try {

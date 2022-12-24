@@ -26,6 +26,7 @@ const AdressSchema = new mongoose.Schema({
   user_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
+    ref: "Victim"
   },
 });
 module.exports = mongoose.model("Address", AdressSchema);
