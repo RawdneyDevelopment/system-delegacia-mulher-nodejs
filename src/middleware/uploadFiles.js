@@ -24,7 +24,7 @@ exports.singleUpload = async (req, res) => {
 }
 
 
-exports.multUploadFiles = async(req,res)=>{
+exports.multiUploadFiles = async(req,res)=>{
 
 }
 
